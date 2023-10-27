@@ -34,7 +34,7 @@ DB_NAME = os.environ.get("DATABASE_NAME", "LeviXarmy")
 #force sub channel id, if you want enable force sub
 FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001524065270"))
 
-TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
+TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "1"))
 
 #start message
 START_MSG = os.environ.get("START_MESSAGE", "Hello {first}\n Hello Welcome to LeviXarmy")
@@ -63,7 +63,7 @@ USER_REPLY_TEXT = "❌Don't send me messages directly I'm only File Share bot!"
 ADMINS.append(OWNER_ID)
 ADMINS.append(1297687327)
 
-LOG_FILE_NAME = "filesharingbot.txt"
+LOG_FILE_NAME = ""
 
 logging.basicConfig(
     level=logging.INFO,
